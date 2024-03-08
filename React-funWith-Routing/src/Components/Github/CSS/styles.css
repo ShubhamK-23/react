@@ -1,0 +1,103 @@
+.github-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    margin: 20px 0; /* Add some margin to prevent touching the header and footer */
+}
+
+.flashcard {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 20px; /* Add padding for better spacing */
+    margin: 20px; /* Add margin for better spacing */
+}
+
+.flashcard .mdl-card__title {
+    background-color: #009688;
+    color: #fff;
+    text-align: center; /* Center align the title */
+}
+
+.flashcard .mdl-card__title-text {
+    font-size: 2rem; 
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.flashcard .mdl-card__supporting-text {
+    padding: 1.5rem;
+}
+
+.flashcard .mdl-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flashcard .mdl-cell {
+    padding: 0;
+}
+
+.flashcard .avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.flashcard .username {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Center align the username */
+}
+
+.flashcard .followers,
+.flashcard .following {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Center align followers and following count */
+}
+
+.flashcard .mdl-card__actions {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.flashcard .mdl-button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .flashcard {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .flashcard .mdl-card__title-text {
+        font-size: 1.5rem;
+    }
+
+    .flashcard .username {
+        font-size: 1.2rem;
+    }
+
+    .flashcard .followers,
+    .flashcard .following {
+        font-size: 1rem;
+    }
+
+    .flashcard .mdl-button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
